@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BloodHound - Free blood trail tracking app for ethical game recovery. No subscription required.">
+    <title>BloodHound - Blood Trail Tracker</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #1a3a1a 0%, #2d5a2d 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero .tagline {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .hero .cta {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: #ff6b35;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        
+        .hero .cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        section {
+            background: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #2d5a2d;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .feature {
+            text-align: center;
+            padding: 1.5rem;
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .feature h3 {
+            color: #2d5a2d;
+            margin-bottom: 0.5rem;
+        }
+        
+        .video-container {
+            max-width: 400px;
+            margin: 2rem auto;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        
+        .video-container iframe {
+            width: 100%;
+            height: 600px;
+        }
+        
+        .comparison {
+            background: linear-gradient(135deg, #fff5f0 0%, #ffe8e0 100%);
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid #ff6b35;
+        }
+        
+        .comparison h3 {
+            color: #2d5a2d;
+            margin-bottom: 1rem;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            margin: 1rem 0;
+        }
+        
+        .comparison-table td {
+            padding: 0.75rem;
+        }
+        
+        .comparison-table .label {
+            font-weight: 600;
+            color: #555;
+        }
+        
+        .comparison-table .other {
+            color: #999;
+            text-decoration: line-through;
+        }
+        
+        .comparison-table .bloodhound {
+            color: #2d5a2d;
+            font-weight: 600;
+        }
+        
+        .testimonials {
+            background: #f9f9f9;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        
+        .testimonial {
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background: white;
+            border-left: 4px solid #2d5a2d;
+            border-radius: 4px;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+        
+        .testimonial-author {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .mission-box {
+            background: linear-gradient(135deg, #2d5a2d 0%, #1a3a1a 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        
+        .mission-box h3 {
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        
+        footer {
+            background: #2d5a2d;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+        
+        footer a {
+            color: #ff6b35;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>🔬 BloodHound</h1>
+        <p class="tagline">Don't Let the Trail Go Cold</p>
+        <p style="margin-bottom: 2rem;">Advanced blood detection for ethical game recovery</p>
+        <a href="https://play.google.com/store/apps/details?id=bloodhound.com.bloodhound" class="cta">
+            Download Free on Google Play
+        </a>
+    </div>
+    
+    <div class="container">
+        <section>
+            <h2>Why BloodHound?</h2>
+            <p>Tracking wounded game is one of the most critical skills in ethical hunting. BloodHound enhances your natural tracking ability by using advanced color science to isolate blood drops that are invisible to the naked eye—especially in challenging terrain like autumn leaves, pine needles, and tall grass.</p>
+            
+            <div class="mission-box">
+                <h3>Our Mission</h3>
+                <p>I built BloodHound after losing a deer in heavy leaf litter at dusk. The guilt of potentially wasting an animal drove me to create a tool that every hunter can access—without the expensive subscriptions that other apps charge.</p>
+                <p style="margin-top: 1rem;"><strong>BloodHound is completely free. No subscription. No trial period. Just a tool that works.</strong></p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>See It In Action</h2>
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/cY0sSTi-TuA" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">🎨</div>
+                    <h3>L*a*b* Color Detection</h3>
+                    <p>Isolates red blood from brown earth and green foliage using advanced color space science</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🌙</div>
+                    <h3>Night Vision Mode</h3>
+                    <p>Works in complete darkness with flashlight. Detects blood in shadows where regular lights fail</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">📍</div>
+                    <h3>GPS Marking</h3>
+                    <p>Pin blood locations on the map. Visualize the animal's path and share with tracking partners</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🎚️</div>
+                    <h3>Adjustable Sensitivity</h3>
+                    <p>Fine-tune detection for different conditions: dry blood, snow cover, heavy foliage</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">📸</div>
+                    <h3>Side-by-Side Capture</h3>
+                    <p>Save comparison photos showing original view and detected blood for verification</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Real-Time Processing</h3>
+                    <p>Zero lag camera analysis. See blood the instant it enters your frame</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="comparison">
+            <h3>Why Choose BloodHound Over Other Apps?</h3>
+            <table class="comparison-table">
+                <tr>
+                    <td class="label">Price</td>
+                    <td class="other">Others: $29.99/year</td>
+                    <td class="bloodhound">BloodHound: FREE</td>
+                </tr>
+                <tr>
+                    <td class="label">Subscription</td>
+                    <td class="other">Others: Required annually</td>
+                    <td class="bloodhound">BloodHound: Never</td>
+                </tr>
+                <tr>
+                    <td class="label">Offline Use</td>
+                    <td class="other">Others: Varies</td>
+                    <td class="bloodhound">BloodHound: Always works</td>
+                </tr>
+                <tr>
+                    <td class="label">Data Privacy</td>
+                    <td class="other">Others: May track locations</td>
+                    <td class="bloodhound">BloodHound: Everything stays local</td>
+                </tr>
+            </table>
+            <p style="margin-top: 1rem; font-weight: 600; color: #2d5a2d;">Your successful recovery is our success. That's why it's free.</p>
+        </section>
+        
+        <section>
+            <h2>Perfect For</h2>
+            <ul style="list-style: none; font-size: 1.1rem;">
+                <li style="padding: 0.5rem 0;">✓ Bow hunters tracking arrow hits</li>
+                <li style="padding: 0.5rem 0;">✓ Rifle hunters in marginal shot scenarios</li>
+                <li style="padding: 0.5rem 0;">✓ Trailing wounded game in difficult terrain</li>
+                <li style="padding: 0.5rem 0;">✓ Night tracking after dusk recoveries</li>
+                <li style="padding: 0.5rem 0;">✓ Training new hunters in ethical tracking</li>
+                <li style="padding: 0.5rem 0;">✓ All big game: Deer, Elk, Bear, Hog, Turkey</li>
+            </ul>
+        </section>
+        
+        <section class="testimonials">
+            <h2>What Hunters Are Saying</h2>
+            <div class="testimonial">
+                <p class="testimonial-text">"Just started using this app and wow! The detection is incredibly accurate. Found drops I would have walked right past."</p>
+                <p class="testimonial-author">— Early Tester, Virginia</p>
+            </div>
+            <p style="text-align: center; color: #666; font-style: italic; margin-top: 2rem;">
+                More reviews coming as hunters use BloodHound in the 2026 season!
+            </p>
+        </section>
+        
+        <section style="text-align: center; background: linear-gradient(135deg, #fff5f0 0%, #ffe8e0 100%);">
+            <h2>Ready to Track Smarter?</h2>
+            <p style="margin: 1.5rem 0; font-size: 1.1rem;">Join hunters who refuse to lose an animal to poor lighting or terrain.</p>
+            <a href="https://play.google.com/store/apps/details?id=bloodhound.com.bloodhound" class="hero .cta" style="display: inline-block; padding: 1rem 2rem; background: #ff6b35; color: white; text-decoration: none; border-radius: 8px; font-size: 1.1rem; font-weight: 600;">
+                Download BloodHound Free
+            </a>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2026 BloodHound by <a href="/">ProDirt</a></p>
+        <p style="margin-top: 1rem;">
+            <a href="mailto:bloodhound.support@gmail.com">Support</a> | 
+            <a href="https://play.google.com/store/apps/details?id=bloodhound.com.bloodhound">Google Play</a> |
+            <a href="/">More Apps</a>
+        </p>
+    </footer>
+</body>
+</html>
