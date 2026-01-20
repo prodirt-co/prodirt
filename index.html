@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Practical hunting and outdoor apps - No subscriptions, built by hunters for hunters">
-    <title>ProDirt - Outdoor Apps</title>
+    <title>ProDirt LLC - Outdoor Apps</title>
+    <link rel="icon" type="image/png" href="logo.png">
     <style>
         * {
             margin: 0;
@@ -21,16 +22,17 @@
         
         header {
             background: rgba(0, 0, 0, 0.3);
-            padding: 1.5rem 0;
+            padding: 2rem 0;
             text-align: center;
             border-bottom: 3px solid #ff6b35;
         }
         
-        header h1 {
-            color: #fff;
-            font-size: 2.5rem;
-            font-weight: 700;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        .header-logo {
+            max-width: 300px;
+            height: auto;
+            margin: 0 auto 1rem auto;
+            display: block;
+            filter: brightness(0) invert(1);
         }
         
         header p {
@@ -97,15 +99,19 @@
         }
         
         .app-icon {
-            width: 80px;
-            height: 80px;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 1rem auto;
+            display: block;
+        }
+        
+        .app-icon.placeholder {
             background: linear-gradient(135deg, #ff6b35, #ff8c5a);
             border-radius: 16px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 2.5rem;
-            margin-bottom: 1rem;
         }
         
         .app-card h3 {
@@ -207,7 +213,7 @@
 </head>
 <body>
     <header>
-        <h1>🎯 ProDirt</h1>
+        <img src="logo.png" alt="ProDirt LLC" class="header-logo">
         <p>Practical Apps for Hunters & Outdoorsmen</p>
     </header>
     
@@ -232,7 +238,7 @@
         <div class="apps-grid">
             <!-- BloodHound -->
             <div class="app-card featured">
-                <div class="app-icon">🔬</div>
+                <img src="bloodhound/logo.png" alt="BloodHound" class="app-icon">
                 <h3>BloodHound</h3>
                 <p class="tagline">Blood Trail Tracking Assistant</p>
                 <p>Advanced blood detection using L*a*b* color science. Highlights blood drops invisible to the naked eye against leaves, grass, and snow. Essential for ethical game recovery.</p>
@@ -249,19 +255,20 @@
             
             <!-- Placeholder for your other apps -->
             <div class="app-card">
-                <div class="app-icon">🗺️</div>
+                <div class="app-icon placeholder">🗺️</div>
                 <h3>Your Next App</h3>
                 <p class="tagline">Coming Soon</p>
                 <p>We're always working on new tools to make your time in the field more successful. Have an idea? Let us know.</p>
-                <a href="mailto:contact@prodirt.dev" class="btn">Suggest an App</a>
+                <a href="mailto:contact.prodirt@gmail.com" class="btn">Suggest an App</a>
             </div>
         </div>
     </div>
     
     <footer>
-        <p>&copy; 2026 ProDirt. Built by hunters, for hunters.</p>
+        <p>&copy; 2026 ProDirt LLC. All rights reserved.</p>
+        <p style="margin-top: 0.5rem;">A Virginia-based outdoor software company.</p>
         <p style="margin-top: 0.5rem;">
-            <a href="mailto:contact@prodirt.dev">Contact</a> | 
+            <a href="mailto:contact.prodirt@gmail.com">Contact</a> | 
             <a href="https://idletools.blogspot.com">Developer Blog</a>
         </p>
     </footer>
