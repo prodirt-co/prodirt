@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Practical hunting and outdoor apps - No subscriptions, built by hunters for hunters">
+    <title>ProDirt - Outdoor Apps</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #1a3a1a 0%, #2d5a2d 100%);
+        }
+        
+        header {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 1.5rem 0;
+            text-align: center;
+            border-bottom: 3px solid #ff6b35;
+        }
+        
+        header h1 {
+            color: #fff;
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        header p {
+            color: #ddd;
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .mission {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .mission h2 {
+            color: #2d5a2d;
+            margin-bottom: 1rem;
+        }
+        
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .app-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .app-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+        }
+        
+        .app-card.featured {
+            border: 3px solid #ff6b35;
+            position: relative;
+        }
+        
+        .app-card.featured::before {
+            content: "FEATURED";
+            position: absolute;
+            top: -12px;
+            left: 20px;
+            background: #ff6b35;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+        
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #ff6b35, #ff8c5a);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .app-card h3 {
+            color: #2d5a2d;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .app-card .tagline {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        
+        .app-card p {
+            color: #555;
+            margin-bottom: 1rem;
+        }
+        
+        .app-card .features {
+            list-style: none;
+            margin: 1rem 0;
+        }
+        
+        .app-card .features li {
+            padding: 0.3rem 0;
+            color: #666;
+        }
+        
+        .app-card .features li::before {
+            content: "✓ ";
+            color: #2d5a2d;
+            font-weight: bold;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: #2d5a2d;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background 0.3s;
+            margin-top: 1rem;
+        }
+        
+        .btn:hover {
+            background: #1a3a1a;
+        }
+        
+        .btn-secondary {
+            background: #666;
+            margin-left: 0.5rem;
+        }
+        
+        .btn-secondary:hover {
+            background: #444;
+        }
+        
+        footer {
+            background: rgba(0, 0, 0, 0.3);
+            color: #ddd;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+        
+        footer a {
+            color: #ff6b35;
+            text-decoration: none;
+        }
+        
+        .principles {
+            background: #f5f5f5;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        
+        .principles h3 {
+            color: #2d5a2d;
+            margin-bottom: 1rem;
+        }
+        
+        .principles ul {
+            list-style: none;
+        }
+        
+        .principles li {
+            padding: 0.5rem 0;
+            color: #555;
+        }
+        
+        .principles li strong {
+            color: #2d5a2d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎯 ProDirt</h1>
+        <p>Practical Apps for Hunters & Outdoorsmen</p>
+    </header>
+    
+    <div class="container">
+        <div class="mission">
+            <h2>Our Mission</h2>
+            <p>Quality outdoor tools shouldn't require expensive subscriptions. We build practical apps that solve real problems in the field—no paywalls, no gimmicks, just tools that work when you need them.</p>
+        </div>
+        
+        <div class="principles">
+            <h3>Our Principles</h3>
+            <ul>
+                <li><strong>No Subscriptions:</strong> One-time purchases or completely free. Your gear shouldn't expire.</li>
+                <li><strong>Built by Hunters:</strong> Field-tested by people who actually use these tools.</li>
+                <li><strong>Privacy First:</strong> Your hunting locations and data stay on your device.</li>
+                <li><strong>Works Offline:</strong> Cell service is unreliable. Our apps aren't.</li>
+            </ul>
+        </div>
+        
+        <h2 style="color: white; margin: 2rem 0 1rem 0; text-align: center;">Our Apps</h2>
+        
+        <div class="apps-grid">
+            <!-- BloodHound -->
+            <div class="app-card featured">
+                <div class="app-icon">🔬</div>
+                <h3>BloodHound</h3>
+                <p class="tagline">Blood Trail Tracking Assistant</p>
+                <p>Advanced blood detection using L*a*b* color science. Highlights blood drops invisible to the naked eye against leaves, grass, and snow. Essential for ethical game recovery.</p>
+                <ul class="features">
+                    <li>Real-time blood detection overlay</li>
+                    <li>Works in complete darkness</li>
+                    <li>GPS location marking</li>
+                    <li>Trail mapping & export</li>
+                    <li>100% Free, no subscription</li>
+                </ul>
+                <a href="https://play.google.com/store/apps/details?id=bloodhound.com.bloodhound" class="btn">Download Free</a>
+                <a href="/bloodhound" class="btn btn-secondary">Learn More</a>
+            </div>
+            
+            <!-- Placeholder for your other apps -->
+            <div class="app-card">
+                <div class="app-icon">🗺️</div>
+                <h3>Your Next App</h3>
+                <p class="tagline">Coming Soon</p>
+                <p>We're always working on new tools to make your time in the field more successful. Have an idea? Let us know.</p>
+                <a href="mailto:contact@prodirt.dev" class="btn">Suggest an App</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2026 ProDirt. Built by hunters, for hunters.</p>
+        <p style="margin-top: 0.5rem;">
+            <a href="mailto:contact@prodirt.dev">Contact</a> | 
+            <a href="https://idletools.blogspot.com">Developer Blog</a>
+        </p>
+    </footer>
+</body>
+</html>
