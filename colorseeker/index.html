@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorSeeker - Professional Color Detection & Smart Counting</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .section {
+            background: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature {
+            padding: 1.5rem;
+            background: #f8f9ff;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .feature h3 {
+            color: #333;
+            margin-bottom: 0.75rem;
+            font-size: 1.25rem;
+        }
+
+        .feature p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .use-cases {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .use-case {
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 8px;
+        }
+
+        .use-case h4 {
+            color: #333;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .tech-highlight {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+        }
+
+        .tech-highlight h3 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        footer {
+            background: #2d3748;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        footer a {
+            color: #90cdf4;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 1rem;
+            color: white;
+            text-decoration: none;
+            opacity: 0.9;
+        }
+
+        .back-link:hover {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .section h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <a href="https://prodirt-llc.github.io/" class="back-link">← Back to ProDirt Apps</a>
+        <img src="logo.png" alt="ColorSeeker Logo" style="width: 120px; height: 120px; margin-bottom: 1rem; border-radius: 20px;">
+        <h1>ColorSeeker</h1>
+        <p>Turn your camera into a professional color detector and smart counter</p>
+        <a href="https://play.google.com/store/apps/details?id=com.colorseeker" class="cta-button">Download Free on Google Play</a>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>See Colors The Way Your Eyes Do</h2>
+            <p>Color Seeker uses advanced CIE L*a*b* color space technology to perceive colors the way the human eye does—focusing on true color perception rather than just light levels. Whether you're a designer hunting for the perfect Hex code, someone with color blindness needing to distinguish shades, or counting loose parts for inventory, this app is your digital eye.</p>
+            
+            <div class="tech-highlight">
+                <h3>🔬 Powered by Color Science</h3>
+                <p>Unlike basic RGB color pickers, Color Seeker uses the CIE L*a*b* color space—the same technology used in professional color management. This means accurate color detection even in shadows, mixed lighting, or challenging conditions where other apps fail.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>✨ Key Features</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>Live Color Picker</h3>
+                    <p>Point at any object to get its common name (e.g., "Mustard Yellow", "Coral") and exact Hex/RGB codes instantly. Perfect for designers, decorators, and anyone who needs precise color matching.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>Tap-to-Lock Detection</h3>
+                    <p>Found a unique color? Tap the screen to lock it. The app creates a custom filter to track only that specific shade, ignoring everything else—essential for sorting and counting.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>Smart Object Counting</h3>
+                    <p>Automatically highlight and count matching objects in real-time. Perfect for inventory, hobbies, or sorting mixed parts. Count hundreds of items in seconds just by spreading them out.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>Precision Zoom Engine</h3>
+                    <p>Switch between 1x, 2x, and 3x zoom to detect small objects like beads, screws, or resistors from across the room. Shadow-proof detection sees through dim lighting.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>Visual Aid Mode</h3>
+                    <p>High-contrast text and clear labeling make this an essential tool for users with Color Vision Deficiency (CVD). Distinguish between easy-to-miss shades with digital verification.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>100% Free</h3>
+                    <p>No subscriptions, no ads blocking your view, no paywalls. A professional-grade tool that respects your workflow and your wallet.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🚀 Built For</h2>
+            <div class="use-cases">
+                <div class="use-case">
+                    <h4>Designers & Creatives</h4>
+                    <p>Get real-world Hex codes for your projects instantly. Match paint colors, fabrics, or any physical material to digital palettes.</p>
+                </div>
+
+                <div class="use-case">
+                    <h4>Accessibility</h4>
+                    <p>Distinguish between similar shades (like Maroon vs. Scarlet) with confidence. An essential tool for anyone with color vision differences.</p>
+                </div>
+
+                <div class="use-case">
+                    <h4>Hobbyists & Makers</h4>
+                    <p>Sort resistors, beads, LEGO bricks, or any small parts by color. Count hundreds of items automatically instead of manually.</p>
+                </div>
+
+                <div class="use-case">
+                    <h4>Inventory & Retail</h4>
+                    <p>Quick counts of merchandise, parts, or supplies. Verify color consistency across batches or shipments.</p>
+                </div>
+
+                <div class="use-case">
+                    <h4>DIY & Home Improvement</h4>
+                    <p>Match existing paint colors, identify wiring by color code, or coordinate design elements across your project.</p>
+                </div>
+
+                <div class="use-case">
+                    <h4>Education & Science</h4>
+                    <p>Teach color theory, verify chemical indicators, or document color changes in experiments with precise data.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>The ProDirt Difference</h2>
+            <p>Like all ProDirt apps, Color Seeker follows our core principles:</p>
+            <ul style="margin-top: 1rem; margin-left: 2rem; color: #666;">
+                <li style="margin-bottom: 0.5rem;"><strong>No Subscriptions:</strong> Free forever. Your tools shouldn't expire.</li>
+                <li style="margin-bottom: 0.5rem;"><strong>Privacy First:</strong> Your data stays on your device. No cloud uploads, no tracking.</li>
+                <li style="margin-bottom: 0.5rem;"><strong>Works Offline:</strong> No internet required. Use it anywhere, anytime.</li>
+                <li style="margin-bottom: 0.5rem;"><strong>Built by People Who Care:</strong> Real tools for real problems, not just another app.</li>
+            </ul>
+        </div>
+
+        <div style="text-align: center; margin: 3rem 0;">
+            <a href="https://play.google.com/store/apps/details?id=com.colorseeker" class="cta-button">Download Color Seeker Free</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 ProDirt LLC. All rights reserved.</p>
+        <p style="margin-top: 1rem;">
+            <a href="https://prodirt-llc.github.io/">More Apps</a> | 
+            <a href="mailto:contact.prodirt@gmail.com">Contact</a> | 
+            <a href="https://idletools.blogspot.com">Developer Blog</a>
+        </p>
+        <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">A Virginia-based outdoor software company.</p>
+    </footer>
+</body>
+</html>
